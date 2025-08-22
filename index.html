@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz sobre el Agua</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz sobre la crisis del agua en Chile</h1>
+        <div class="quiz-container">
+            <div id="question-box">
+                <p id="question-text"></p>
+                <div id="options-container"></div>
+            </div>
+            <div id="feedback-container">
+                <p id="feedback-text"></p>
+            </div>
+            <div id="button-container">
+                <button id="submit-btn" disabled>Siguiente</button>
+            </div>
+        </div>
+        <div id="score-container" class="hidden">
+            <h2>¡Quiz finalizado!</h2>
+            <p>Tu puntaje final es: <span id="final-score">0</span>/<span id="total-questions">15</span></p>
+            <p id="final-message"></p>
+            <button id="restart-btn">Reiniciar Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

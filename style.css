@@ -1,0 +1,142 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0f7fa;
+    color: #004d40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 700px;
+}
+
+h1 {
+    color: #00796b;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#question-box {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#question-text {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+#options-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.option-btn {
+    background-color: #b2dfdb;
+    border: none;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: left;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 1em;
+    color: #004d40;
+}
+
+.option-btn:hover {
+    background-color: #80cbc4;
+    transform: translateY(-2px);
+}
+
+.option-btn.correct {
+    background-color: #4caf50;
+    color: #ffffff;
+}
+
+.option-btn.incorrect {
+    background-color: #f44336;
+    color: #ffffff;
+}
+
+#feedback-container {
+    min-height: 40px;
+    margin-top: 10px;
+}
+
+#feedback-text {
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+#submit-btn {
+    background-color: #00796b;
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+#submit-btn:hover:enabled {
+    background-color: #004d40;
+}
+
+#submit-btn:disabled {
+    background-color: #b2dfdb;
+    cursor: not-allowed;
+}
+
+.hidden {
+    display: none;
+}
+
+#score-container {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #e0f2f1;
+}
+
+#final-score {
+    font-size: 2em;
+    font-weight: 700;
+    color: #00796b;
+}
+
+#restart-btn {
+    background-color: #00796b;
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+#restart-btn:hover {
+    background-color: #004d40;
+}
